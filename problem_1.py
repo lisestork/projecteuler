@@ -14,8 +14,8 @@ import time
 import numpy as np
 
 start = time.time()
-all_ints = np.linspace(0,999,1000, dtype=int)
-answer = sum(all_ints[(all_ints % 3 == 0) + (all_ints % 5 == 0)])
+a = np.linspace(0,999,1000, dtype=int)
+b = sum(a[(a % 3 == 0) + (a % 5 == 0)])
 end = time.time()
 print("Script ran for {} seconds".format(end-start))
-print(answer)
+print(b)
