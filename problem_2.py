@@ -26,7 +26,6 @@ while c < 4000000:
     b = c
     c = a + b
 end = time.time()
-print("answer:",s)
 
 print("Script ran for {} seconds".format(end-start))
-print(s)
+print("answer:",s)
