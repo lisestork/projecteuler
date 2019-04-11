@@ -10,6 +10,7 @@ Created on Tue Apr  9 16:27:12 2019
 #The prime factors of 13195 are 5, 7, 13 and 29.
 #
 #What is the largest prime factor of the number 600851475143 ?
+import time
 
 def next_prime(n):  
     for i in range(n+1, 2*n):
@@ -27,8 +28,6 @@ def prime_factors(n,primes=[2]):
             primes.append(next_prime(primes[-1]))
     return max(factors)
     
-import time
-
 start = time.time()
 x = prime_factors(600851475143)
 end = time.time()
