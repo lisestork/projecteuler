@@ -16,10 +16,10 @@ Created on Thu Apr 11 16:15:20 2019
 import numpy as np
 import time
 
-def pyth_triplet(s, found=False):
+def pyth_triplet(s, ub_n, found=False):
 
     while not found:
-        n = np.random.randint(2,50)
+        n = np.random.randint(2,ub_n)
         m = np.random.randint(1,n)
         a = n**2 - m**2
         b = 2*n*m
@@ -29,7 +29,7 @@ def pyth_triplet(s, found=False):
             found = True
     
 start = time.time()
-x = pyth_triplet(1000)
+x = pyth_triplet(1000,50)
 end = time.time()
 print("Script ran for {} seconds".format(end-start))
 print("Answer: ", x)        
